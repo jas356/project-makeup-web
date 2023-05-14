@@ -1,7 +1,6 @@
 import { useState } from "react"
-import MakeupMembers from "./MakeupMembers"
 
-export default function ClassSignup() {
+export default function ClassSignup({addMemeber, setAddMember}) {
     const [firstName, setFirstname] = useState('')
     const [lastName, setLastname ] = useState('')
     const [undertoneType, setUndertoneType ] = useState('')
@@ -10,11 +9,9 @@ export default function ClassSignup() {
     const handleAddSignup = (e) => {
         e.preventDefault()
 
-
         fetch("https://project-makeup-jch.web.app/makeup-members", {
             method: "POST",
-            headers: { "Content-Type": "applications/json",
-        
+            headers: { "Content-Type" : "application/json",
         },
 
         body: JSON.stringify({firstName, lastName, undertoneType, classType })
@@ -23,10 +20,14 @@ export default function ClassSignup() {
         .then(resp => resp.json())
         .then(data => {
             if(data.message) {
+            setFirstname('')
+            setLastname('')
+            setUndertoneType('')
+            setClassType('')
                 alert(data.message)
                 return
             }
-            MakeupMembers(data)
+            setAddMember(data)
         })
         .catch(alert)
     }
@@ -65,7 +66,7 @@ export default function ClassSignup() {
             onChange={(e) => {setClassType(e.target.value)}} />
             </label>
             <br />
-            <input type="submit" value="Submit" />
+            <input type="submit" />
         </form>
         </>
     )

@@ -1,4 +1,5 @@
 
+import { useState } from 'react';
 import ClassSignup from './components/ClassSignup.jsx';
 import ContactUs from './components/ContactUs.jsx';
 import Home from './components/Home.jsx';
@@ -9,12 +10,13 @@ import Header from './layout/Header.jsx';
 import './styles/App.css';
 
 function App() {
+  const [addMember, setAddMember] = useState("")
   return (
    <>
    <Header />
    <Home />
    <About />
-   <ClassSignup />
+   <ClassSignup addMember={addMember} setAddMember={setAddMember}/>
    <MakeupMembers />
    <ContactUs />
    <Footer />
