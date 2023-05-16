@@ -17,7 +17,7 @@ function App() {
    <Header />
    <Home />
    <About />
-   <ClassSignup addMember={addMember} setAddMember={setAddMember}/>
+   <ClassSignup addMember={addMember} setAddMember={setAddMember} setGetAllMakeupMembers={setGetAllMakeupMembers}/>
    <MakeupMembers getAllMakeupMembers={getAllMakeupMembers} setGetAllMakeupMembers={setGetAllMakeupMembers}  />
    <Footer />
    </>
