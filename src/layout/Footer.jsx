@@ -1,6 +1,6 @@
 export default function Footer() {
 
-    //const githubUrl = "https://"
+    //const githubUrl = "https://https://github.com/jas356/project-makeup-web"
     const currentYear = new Date().getFullYear()
 
     return(

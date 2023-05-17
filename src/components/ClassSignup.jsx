@@ -1,17 +1,18 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
+import MakeupMembers from "./MakeupMembers.jsx";
 
-export default function ClassSignup({
-  addMemeber,
+export default function ClassSignUp({
+  addMember,
   setAddMember,
   setGetAllMakeupMembers,
 }) {
-  const [firstName, setFirstname] = useState("");
-  const [lastName, setLastname] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [undertoneType, setUndertoneType] = useState("");
   const [classType, setClassType] = useState("");
 
-  const handleAddSignup = (e) => {
+  const handleAddSignUp = (e) => {
     e.preventDefault();
 
     fetch("https://project-makeup-jch.web.app/makeup-members", {
@@ -27,8 +28,8 @@ export default function ClassSignup({
           return;
         }
         setGetAllMakeupMembers(data);
-        setFirstname("");
-        setLastname("");
+        setFirstName("");
+        setLastName("");
         setUndertoneType("");
         setClassType("");
       })
@@ -37,18 +38,19 @@ export default function ClassSignup({
 
   return (
     <>
+     
       <main>
         <h1>Class Sign-Ups</h1>
         <h2>Enter info below</h2>
       </main>
-      <form onSubmit={handleAddSignup}>
+      <form onSubmit={handleAddSignUp}>
         <label htmlFor="firstName">
           First Name
           <input
             type="text"
             value={firstName}
             onChange={(e) => {
-              setFirstname(e.target.value);
+              setFirstName(e.target.value);
             }}
           />
         </label>
@@ -60,7 +62,7 @@ export default function ClassSignup({
             type="text"
             value={lastName}
             onChange={(e) => {
-              setLastname(e.target.value);
+              setLastName(e.target.value);
             }}
           />
         </label>
@@ -91,6 +93,8 @@ export default function ClassSignup({
         </label>
         <br />
         <input type="submit" />
+
+        <MakeupMembers />
       </form>
     </>
   );

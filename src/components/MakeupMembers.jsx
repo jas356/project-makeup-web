@@ -1,25 +1,29 @@
-import { useEffect } from "react"
+import { useState, useEffect } from "react"
 import { Col, Container, Row } from "react-bootstrap"
-import { useNavigate } from "react-router-dom"
+//import { useNavigate } from "react-router-dom"
 
 
-export default function MakeupMembers({getAllMakeupMembers, setGetAllMakeupMembers }) {
+// export default function MakeupMembers({getAllMakeupMembers, setGetAllMakeupMembers }) {
+export default function MakeupMembers() {
+    const[getAllMakeupMembers, setGetAllMakeupMembers] = useState();
+
     useEffect(() => {
         fetch("https://project-makeup-jch.web.app/makeup-member-classes", {
             method: "GET",
             headers: { 
                 "Content-type" : "application/json",
-                "Accept" : "application/json" 
              }
         })
         .then(resp => resp.json())
         .then(setGetAllMakeupMembers)
         .catch(alert)
     }, [])
-
+    
+    console.log({getAllMakeupMembers});
 
     return(
             <div>
+                
             { !getAllMakeupMembers ?
             <h2>Loading...</h2>
             :
