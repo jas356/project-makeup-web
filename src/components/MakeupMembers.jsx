@@ -22,29 +22,29 @@ export default function MakeupMembers() {
     console.log({getAllMakeupMembers});
 
     return(
-            <div>
+        <>
+     <Container>
+            <Row>
+                <Col>
                 
             { !getAllMakeupMembers ?
             <h2>Loading...</h2>
             :
-            <Container>
-                <Row>
-                    <Col></Col>
-                         <div>
-                            <h1>Makeup Members</h1>
-                        {getAllMakeupMembers.map((element) => (
-                             <div key={element._id}>
-                             <p>First Name: {element.firstName}</p>
-                             <p>Last Name: {element.lastName}</p>
-                             <p>Undertone Type 🎨:{element.undertoneType}</p>
-                             <p>Zoom Class 📅: {element.classType}</p>
-                             </div>
-                        ))}
+                 <div>
+                    <h1>Makeup Members</h1>
+                    {getAllMakeupMembers.map((element) => (
+                        <div key={element._id}>
+                        <p>First Name: {element.firstName}</p>
+                        <p>Last Name: {element.lastName}</p>
+                        <p>Undertone Type 🎨:{element.undertoneType}</p>
+                        <p>Zoom Class 📅: {element.classType}</p>
                         </div>
-                </Row>
-            </Container>
-
+                        ))}
+                 </div>
             }
-            </div>
+                </Col>
+            </Row>
+        </Container>
+</>
     )
 }

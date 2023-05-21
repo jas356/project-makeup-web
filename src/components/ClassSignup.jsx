@@ -1,6 +1,7 @@
 import { useState } from "react";
 //import { useNavigate } from "react-router-dom";
 import MakeupMembers from "./MakeupMembers.jsx";
+import { Container, Row, Col } from "react-bootstrap";
 
 export default function ClassSignUp({
   addMember,
@@ -38,64 +39,72 @@ export default function ClassSignUp({
 
   return (
     <>
-     
-      <main>
-        <h1>Class Sign-Ups</h1>
-        <h2>Enter info below</h2>
-      </main>
-      <form onSubmit={handleAddSignUp}>
-        <label htmlFor="firstName">
-          First Name
-          <input
-            type="text"
-            value={firstName}
-            onChange={(e) => {
-              setFirstName(e.target.value);
-            }}
-          />
-        </label>
-        <br />
+        <Container>
+          <Row>
+            <Col>
+                <main>
+                  <h1>Class Sign-Ups</h1>
+                  <h2>Enter info below</h2>
+                </main>
+                <form onSubmit={handleAddSignUp}>
+                  <label htmlFor="firstName">
+                    First Name
+                    <input
+                      type="text"
+                      value={firstName}
+                      onChange={(e) => {
+                        setFirstName(e.target.value);
+                      }}
+                    />
+                  </label>
+                  <br />
 
-        <label htmlFor="lastName">
-          Last Name
-          <input
-            type="text"
-            value={lastName}
-            onChange={(e) => {
-              setLastName(e.target.value);
-            }}
-          />
-        </label>
+                  <label htmlFor="lastName" >
+                    Last Name
+                    <input
+                    placeholder=""
+                      type="text"
+                      value={lastName}
+                      onChange={(e) => {
+                        setLastName(e.target.value);
+                      }}
+                    />
+                  </label>
 
-        <br />
-        <label htmlFor="undertoneType">
-          Undertone Type
-          <input
-            type="text"
-            value={undertoneType}
-            onChange={(e) => {
-              setUndertoneType(e.target.value);
-            }}
-          />
-        </label>
+                  <br />
+                  <label htmlFor="undertoneType">
+                    Undertone Type
+                    <input
+                      placeholder=""
+                      type="text"
+                      value={undertoneType}
+                      onChange={(e) => {
+                        setUndertoneType(e.target.value);
+                      }}
+                    />
+                  </label>
 
-        <br />
-        <label htmlFor="classType">
-          {" "}
-          Class Type
-          <input
-            type="text"
-            value={classType}
-            onChange={(e) => {
-              setClassType(e.target.value);
-            }}
-          />
-        </label>
-        <br />
-        <input type="submit" />
+                  <br />
+                  <label htmlFor="classType">
+                    {" "}
+                    Class Type
+                    <input
+                      placeholder=""
+                      type="text"
+                      value={classType}
+                      onChange={(e) => {
+                        setClassType(e.target.value);
+                      }}
+                    />
+                  </label>
+                  <br />
+                  <input type="submit" />
 
-        <MakeupMembers />
-      </form>
+                  <MakeupMembers />
+                   </form>
+                </Col>
+            </Row>
+        </Container>
     </>
   );
 }
