@@ -7,12 +7,12 @@ import Image2 from "../gallery/3.png";
 export default function ClassSignUp({
   addMember,
   setAddMember,
-  setGetAllMakeupMembers,
 }) {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [undertoneType, setUndertoneType] = useState("");
   const [classType, setClassType] = useState("");
+  const[getAllMakeupMembers, setGetAllMakeupMembers] = useState();
 
   const handleAddSignUp = (e) => {
     e.preventDefault();
@@ -105,8 +105,8 @@ export default function ClassSignUp({
                     />
                   </label>
                   <br />
-                  <input type="submit" />
-                  <MakeupMembers />
+                  <button type="submit">Submit</button>
+                  <MakeupMembers getAllMakeupMembers={getAllMakeupMembers} setGetAllMakeupMembers={setGetAllMakeupMembers} />
 
                    </form>
                 </Col>

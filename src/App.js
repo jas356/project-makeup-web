@@ -21,7 +21,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/about' element={<About />}></Route>
-        <Route path='/makeup-member-classes' element={<ClassSignUp />}></Route>
+        <Route path='/makeup-member-classes' element={<ClassSignUp setGetAllMakeupMembers />}></Route>
         <Route path='/makeup-members' element={<MakeupMembers/>}></Route>
       </Routes>
 

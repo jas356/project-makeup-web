@@ -6,8 +6,8 @@ import Image3models from "../gallery/3-mod.png"
 
 
 // export default function MakeupMembers({getAllMakeupMembers, setGetAllMakeupMembers }) {
-export default function MakeupMembers() {
-    const[getAllMakeupMembers, setGetAllMakeupMembers] = useState();
+export default function MakeupMembers({ getAllMakeupMembers, setGetAllMakeupMembers }) {
+    // const[getAllMakeupMembers, setGetAllMakeupMembers] = useState();
 
     useEffect(() => {
         fetch("https://project-makeup-jch.web.app/makeup-member-classes", {
@@ -21,7 +21,7 @@ export default function MakeupMembers() {
         .catch(alert)
     }, [])
     
-    console.log({getAllMakeupMembers});
+    // console.log({getAllMakeupMembers});
 
     return(
         <>
