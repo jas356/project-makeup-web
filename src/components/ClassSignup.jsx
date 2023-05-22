@@ -104,9 +104,9 @@ export default function ClassSignUp({
                     />
                   </label>
                   <br />
+                  <MakeupMembers />
                   <input type="submit" />
 
-                  <MakeupMembers />
                    </form>
                 </Col>
             </Row>
