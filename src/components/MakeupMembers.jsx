@@ -1,5 +1,5 @@
 import { Parallax } from "react-scroll-parallax";
-import { useState, useEffect } from "react"
+import { useEffect } from "react"
 import { Col, Container, Row } from "react-bootstrap"
 import Image3models from "../gallery/3-mod.png"
 //import { useNavigate } from "react-router-dom"
@@ -36,7 +36,7 @@ export default function MakeupMembers({ getAllMakeupMembers, setGetAllMakeupMemb
                     <Parallax speed={10}
                         scale={[1, 1]}
                           easing="easeInQuad">
-                        <img src={Image3models} alt='Responsive image' max-width="100%" height="auto"/>
+                        <img src={Image3models} alt='Responsive image' max-width="100%" height="auto" border-radius="20px"/>
                     </Parallax>
                     <h1>Makeup Members</h1>
                     {getAllMakeupMembers.map((element) => (
