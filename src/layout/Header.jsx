@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Image from '../gallery/3models.jpg';
 import Image1 from "../gallery/22.webp"
 import Image2 from "../gallery/10models.png"
-import Image3 from "../gallery/background.png"
+import Image3 from "../gallery/3-mod.png"
 
 export default function Header() {
     return(
@@ -17,17 +17,15 @@ export default function Header() {
                     <>
                     <header>
                     <h1>Understanding Skin Undertones</h1>
-                    <Parallax speed={-10}
-                        translateX={['-400px', '0px']}
-                        scale={[0.75, 1]}
+                    {/* <Parallax speed={-10}
+                        // translateX={['-400px', '0px']}
+                        // scale={[0.75, 1]}
                         // rotate={[-180, 0]}
                           easing="easeInQuad">
                         <img src={Image3} alt=''/>
-                    </Parallax> 
+                    </Parallax>  */}
                      <Parallax speed={20}
-                        translateX={['-400px', '0px']}
-                        scale={[0.75, 1]}
-                        // rotate={[-180, 0]}
+                        scale={[1, 1]}
                           easing="easeInQuad">
                         <img src={Image2} alt=''/>
                     </Parallax>

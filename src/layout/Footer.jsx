@@ -1,12 +1,14 @@
+//import AiFillGithub from "react-bootstrap-icons"
+
 export default function Footer() {
 
-    //const githubUrl = "https://https://github.com/jas356/project-makeup-web"
+    const gitHubUrl = "https://github.com/jas356/project-makeup-web"
     const currentYear = new Date().getFullYear()
 
     return(
         <footer>
-            <p className="text-center text-secondary">
-                <a href="/" //{githubUrl}
+            <p className="text-center text-secondary ">
+                <a href={gitHubUrl}
                 target="_blank"
                 rel= "noreferrer"
                 className="button-effect">

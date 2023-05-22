@@ -3,7 +3,7 @@
 //import Header from './layout/Header.jsx';
 import Home from './components/Home.jsx';
 import About from './components/About.jsx';
-import ClassSignUp from './components/ClassSignUp.jsx';
+import ClassSignUp from './components/ClassSignup.jsx';
 import MakeupMembers from './components/MakeupMembers.jsx';
 import Footer from './layout/Footer.jsx';
 import './styles/App.css';

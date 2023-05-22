@@ -7,7 +7,7 @@ export default function NavLine() {
       <>
         <Navbar> 
           <Container>
-            <Nav>
+            <Navbar>
                 <Nav.Item>
                   <Nav.Link as={Link} to="/">Home</Nav.Link> 
                 </Nav.Item>
@@ -17,7 +17,7 @@ export default function NavLine() {
                 </Nav.Item>
 
                 <Nav.Item>
-                  <Nav.Link as={Link} to="/makeup-member-classes">Zoom Sign-Up</Nav.Link>
+                  <Nav.Link as={Link} to="/makeup-member-classes">Class Sign-Up</Nav.Link>
                 </Nav.Item>
 
 
@@ -25,7 +25,7 @@ export default function NavLine() {
               <li><Link to="/About" >About</Link></li>
               <li><Link to="/makeup-members/makeup-member-classes" >Zoom Class</Link></li> */}
 
-            </Nav>
+            </Navbar>
           </Container>
         </Navbar>
         </>

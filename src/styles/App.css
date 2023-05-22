@@ -1,0 +1,112 @@
+*, *:before, *:after {
+    /* margin: 0;
+    padding: 0; */
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+
+/* Background Image */
+body {
+animation: gradient 300s ease infinite;
+background: -webkit-linear-gradient(to right, #FF9A8B 0%, #FF99AC 12%, #cd9270 30%, #9f6242 58%, #7e4025 82%, #562c1a 100% ) ; 
+background: linear-gradient(to left  #FF9A8B 0%, #FF99AC 12%, #cd9270 30%, #9f6242 58%, #7e4025 82%, #562c1a 100%);
+background-image: url(../gallery/body-img.jpg);
+backdrop-filter: blur(3px);
+}
+@keyframes gradient {
+      0% {
+        background-position: 20% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }  
+}
+
+/* Container Background Image */
+.about-container {
+    padding: 40px;
+    background-image: linear-gradient(257deg, #FF9A8B 0%, #FF99AC 12%, #cd9270 30%, #9f6242 58%, #7e4025 82%, #562c1a 100%);
+}
+
+.home-container {
+    padding: 40px;
+    background-image: linear-gradient(257deg, #FF9A8B 0%, #FF99AC 12%, #cd9270 30%, #9f6242 58%, #7e4025 82%, #562c1a 100%);
+}
+
+.class-container {
+    padding: 40px;
+    background-image: linear-gradient(257deg, #FF9A8B 0%, #FF99AC 12%, #cd9270 30%, #9f6242 58%, #7e4025 82%, #562c1a 100%);
+}
+
+
+ /* .about-container .home-container{
+    padding: 40px;
+    background-size: 100% 55%;
+     background-image: url(../gallery/22.webp); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    text-align: center;
+    justify-content: center;
+    /* max-width: 1320px; */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+  }
+  
+  a {
+    color: #ffffff;
+    border: 3px solid;
+    padding: 0.7rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+    justify-content: center;
+  }
+  
+  a:hover,
+  a:focus {
+    background-color: #7e4025;
+  }
+
+
+
+  /* Spinning circle image */
+.rotate {
+    width: 400px 400px; 
+      animation: rotation 75s infinite linear;
+ }
+  @keyframes rotation {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
+  }
+
+  img {
+    background-position: center;
+  }
+  
+
+
+ /* FOOTER */
+footer {
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    margin-top: 25px;
+}

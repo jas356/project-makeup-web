@@ -2,6 +2,7 @@ import { useState } from "react";
 //import { useNavigate } from "react-router-dom";
 import MakeupMembers from "./MakeupMembers.jsx";
 import { Container, Row, Col } from "react-bootstrap";
+import Image2 from "../gallery/3.png";
 
 export default function ClassSignUp({
   addMember,
@@ -39,9 +40,14 @@ export default function ClassSignUp({
 
   return (
     <>
-        <Container>
-          <Row>
-            <Col>
+               <Row>
+                <Col>
+                <img src={Image2} alt="Responsive image" className="rotate img-fluid" />
+                </Col>
+               </Row>
+        <Container className="class-container">
+          <Row className="text-centered">
+            <Col sm={12} md={6} lg={4}>
                 <main>
                   <h1>Class Sign-Ups</h1>
                   <h2>Enter info below</h2>
