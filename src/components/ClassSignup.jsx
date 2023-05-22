@@ -51,11 +51,13 @@ export default function ClassSignUp({
                 <main>
                   <h1>Class Sign-Ups</h1>
                   <h2>Enter info below</h2>
+                  <h2>Zoom Classes Coming Soon...</h2>
                 </main>
                 <form onSubmit={handleAddSignUp}>
                   <label htmlFor="firstName">
                     First Name
                     <input
+                      placeholder="First Name"
                       type="text"
                       value={firstName}
                       onChange={(e) => {
@@ -68,7 +70,7 @@ export default function ClassSignUp({
                   <label htmlFor="lastName" >
                     Last Name
                     <input
-                    placeholder=""
+                    placeholder="Last Name"
                       type="text"
                       value={lastName}
                       onChange={(e) => {
@@ -81,7 +83,7 @@ export default function ClassSignUp({
                   <label htmlFor="undertoneType">
                     Undertone Type
                     <input
-                      placeholder=""
+                      placeholder="Undertone Type"
                       type="text"
                       value={undertoneType}
                       onChange={(e) => {
@@ -92,10 +94,9 @@ export default function ClassSignUp({
 
                   <br />
                   <label htmlFor="classType">
-                    {" "}
                     Class Type
                     <input
-                      placeholder=""
+                      placeholder="Zoom Class 1 or 2"
                       type="text"
                       value={classType}
                       onChange={(e) => {
@@ -104,8 +105,8 @@ export default function ClassSignUp({
                     />
                   </label>
                   <br />
-                  <MakeupMembers />
                   <input type="submit" />
+                  <MakeupMembers />
 
                    </form>
                 </Col>
