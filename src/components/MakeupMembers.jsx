@@ -1,6 +1,6 @@
 import { Parallax } from "react-scroll-parallax";
 import { useEffect } from "react"
-import { Col, Container, Row } from "react-bootstrap"
+import { Col, Container, Row, Table } from "react-bootstrap"
 import Image3models from "../gallery/3-mod.png"
 //import { useNavigate } from "react-router-dom"
 

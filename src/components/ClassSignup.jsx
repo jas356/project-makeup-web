@@ -81,7 +81,7 @@ export default function ClassSignUp({
 
                   <br />
                   <label htmlFor="undertoneType">
-                    Undertone Type
+                    Undertone 
                     <input
                       placeholder="Undertone Type"
                       type="text"

@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Jost:wght@200&family=Lobster&family=Tilt+Prism&display=swap');
+/* //title */
+  @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Dancing+Script:wght@400;500;600;700&family=Jost:wght@200&family=Lobster&family=Tilt+Prism&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200&family=Lobster&family=Tilt+Prism&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Jost:wght@200&family=Lobster&family=Tilt+Prism&display=swap');
+
+
 *, *:before, *:after {
     /* margin: 0;
     padding: 0; */
@@ -29,7 +37,7 @@ backdrop-filter: blur(3px);
 /* Container Background Image */
 .about-container {
     padding: 40px;
-    background-image: linear-gradient(257deg, #FF9A8B 0%, #FF99AC 12%, #cd9270 30%, #9f6242 58%, #7e4025 82%, #562c1a 100%);
+    background-image: linear-gradient(275deg, #FF9A8B 0%, #FF99AC 12%, #cd9270 30%, #9f6242 58%, #7e4025 82%, #562c1a 100%);
     border-radius: 35px;
     margin-left: 30px;
     margin-right: 30px;
@@ -51,11 +59,18 @@ backdrop-filter: blur(3px);
     margin-right: 30px;
 }
 
+p {
+font-weight: 100;
+font-family: "Crimson Text";
+font-size: 25px;
+color: "#fff"; 
+font-weight: 900;
+}
+
 
  /* .about-container .home-container{
     padding: 40px;
     background-size: 100% 55%;
-     background-image: url(../gallery/22.webp); 
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -69,6 +84,13 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 20px;
+}
+
+h1 {
+  font-weight: 900;
+  font-family: "Lobster";
+  color: "#fff"; 
+font-weight: 900;
 }
 
 /* Navigation bar */
@@ -110,7 +132,19 @@ nav {
   img {
     background-position: center;
   }
+
+  table {
+    justify-content: center;
+    text-align: center;
+  }
   
+  h1 {
+    font-family: "Crimson Text";
+  }
+
+  h2 {
+    font-weight: 700;
+  }
 
 
  /* FOOTER */
@@ -123,7 +157,10 @@ footer {
 
 label {
   display: block;
+  columns: 1;
 }
+
+
 
 button { 
   padding: 8px 24px;
